@@ -1,4 +1,104 @@
-import base64
-LEOUqdOo='aW1wb3J0IGJhc2U2NApMRU9VcWRPbz0nYVcxd2IzSjBJR0poYzJVMk5BcE1SVTlWY1dSUGJ6MG5ZVmN4ZDJJelNqQkpSemw2UkZGd2NHSllRblpqYmxGblkyMVdlR1JYVm5wa1NFMU9RMjFhZVdJeU1HZFpNamwxV1ROV2VXTnRWblZrUXpWdFpGaFNNV050Vm5wSlIyeDBZMGM1ZVdSRFFsVmhTRXBzV1ZkU1VXSXlPWE5TV0doc1dUTldNR0l6U1hOSlIwWjZXREpPZG1KWVFuTmFXRkpzV2tFd1MxcHVTblppVTBJd1pWaENjR0p0WTJkaFZ6RjNZak5LTUVsRmVIQmpNMUZPUTIxYWVXSXlNR2RaTWpsellqTkthR0pYUldkaFZ6RjNZak5LTUVsSGJIVmhXRkZ6U1VWYWRtTnRWWE5KUms0d1pWZDRiRVJSY0hCaVdFSjJZMjVSWjJSSGFIbGFWMFpyWVZjMWJrUlJiMDVEYld4MVlWaFJiMWxZVmpCaU0wcHNZekpXTUZCV1VubGtWMVZ3UkZGdlRrTnBUV2RSTWpsMVl6TlNhR0p1VW5wRVVYQkNWVVZzWmxaV1NrMUpSREJuU1cxb01HUklRbnBQYVRoMll6TldhVXhZVG1wWlZ6UjBXVmhDY0V4dVNteGtiVlo1WXpKV2NHTkhVblppVjBad1ltazFhbUl5TUhaUU1sSjJZbGRHY0dKcU1UZGFSemwwV1Zkc2RXWlRTVTVEYTFwS1ZFWlNSbFZyVmtWWU1VNVdVV3RTVUZSVlJrcFViRTFuVUZOQ1lrUlJiMmRKUTBGblNqTmtNMlI1Tkc1TVEwRnVaREpXYVdKWFJuQmlRelJ1VEVOQmJsa3pRbWhpYlZaelRHbGpjMGxEWkdwalIwNW9Za2RXZFZwSFJubGplVFJ1VEVOQmJsa3pRbXBpTWpVd1dWZE9NR041Tkc1TVFUQkxTVU5CWjBsRFpETmFWMHByWVZoT2NreHBZM05KUTJSMFdWZHNjMHhwWTNOSlEyUXpZVWN3ZFVwNWQyZEtNa1l4WkVjNWEyRllUbXBpTTFwc1kyazBia1JSY0dSRVVYQk9VVlpvWmxaRmFGTlNWVVpGVlhsQk9VbEVWWGROUVRCTFJGRnZha2xGZUhaWk1uTm5XbTA1ZVVsSVVtOWpiVlpvV2tNeGVsbFhXbXhKUjFwd1lrZFZaMlF6U25Ca1IyeDFXbmN3UzFwdGJITmFWamx6WWpKT2NrbEVNR2RrUjJoNVdsZEdhMkZYTlc1TWEzaDJXVEp6YjB0Uk1FdEVVWEJyV2xkWloxa3llR3haV0VwbVl6Sk9lVnBYVm5WTFEyczJSRkZ2WjBsRFFXZEphVWxwVVRKNGJGbFlTV2RrUjJoc1NVZE9kbUp1VG5aaVIxVm5ZekpPZVZwWFZuVk1hVWxwU1djd1MwbERRV2RKUjJ4dFNVYzVla3h0TldoaVYxVm5VRlF3WjBveU5UQktlbTlPUTJsQlowbERRV2RKUTBGbllqTk5kV016Ykhwa1IxWjBTME5rYW1KSVRXNUxVVEJMU1VOQlowbEhWbk5qTWxVMlJGRnZaMGxEUVdkSlEwRm5TVWM1ZWt4dVRqVmpNMUpzWWxObmJsa3llR3haV0VsdVMxRXdTMFJSY0d0YVYxbG5XakpXTUZnelRqRlpiVkoyWWxkR2NHSnVUVzlhUnpsMFdWZHNkVTlwUW5wa1NFbHpTVWN4YUdWR09YbGFXRko1WVZkV2VrOXBRbkJpYmxGblVGTkJla3RUUVhSUWFVSk5ZVmhPTUZjelRqQmpiREEyUkZGdlowbERRV2RKYVVscFJGRnZaMGxEUVdkVmJWWXdZMjFzYkdSdFZXZGpNMVpwV2tjNWRGbFhiSFZqZVVKdFlqTkpaMWxUUW01aFdGcHNZbWxDYTJJeU1XaGhWelIxUkZGdlowbERRV2RKYVVscFJGRnZaMGxEUVdkamJWWXdZMjFzYkdONVFUbEpSRUZPUTJsQlowbERRak5oUjJ4eldsTkNlVnBZVW5saFYxWjZTVVIzWjJKWFJqUllNMHBzWkVoS2NGcFlUVFpFVVc5blNVTkJaMGxEUVdkSlNGSjVaVlJ2VGtOcFFXZEpRMEZuU1VOQlowbERRV2RKU0Vwc1l6TkNkbUp1VG14SlJEQm5ZMjFXZUdSWFZucGtTRTExV2pKV01FdEZSbEZUVmpsV1ZXdDNkVnB0T1hsaVYwWXdTMGRTZG1KWFJuQmlhakZyWWpJeGFHRlhOSEJMVVRCTFNVTkJaMGxEUVdkSlEwRm5TVU5CWjJOdFZucGpSemwxWXpKVmRXTnRSbkJqTWxabVdtMDVlVmd6VGpCWldGSXhZM2xuY0VSUmIyZEpRMEZuU1VOQlowbERRV2RKUTBKcldWaFNhRWxFTUdkamJWWjZZMGM1ZFdNeVZYVmhiazUyWW1sbmNFUlJiMDVEYVVGblNVTkJaMGxEUVdkSlEwRm5TVWRzYlVsRFpIbGFXRTR4WWtoUmJrbEhiSFZKUjFKb1pFZEZaMWxYTld0SlEyUnJZakl4YUdGWE5YcEtlVUp3WW1sQ2ExbFlVbWhYZVdSNVdsaE9NV0pJVVc1WVZHOU9RMmxCWjBsRFFXZEpRMEZuU1VOQlowbERRV2RKUTBKNVdsaFNNV050TkdkYVIwWXdXVlp6Ym1OdFZucGtWM2d3U2pFeFlrb3lVblppVjBad1ltNU5ibGhSTUV0SlEwRm5TVU5CWjBsRFFXZEpRMEZuV2xkNGVscFViMDVEYVVGblNVTkJaMGxEUVdkSlEwRm5TVU5CWjBsRFFuZGpiV3gxWkVOb1IySXpTbXhNYkd4R1ZFVjRVRlo1UVhKSlIxbHBWM2xHWkVsRk5YWkpTRTR4V1cxU2RtSlhSbkJpYmsxbldtMDVNV0p0VVdkYWJUbDVTVWgwYTJJeU1XaGhWelU1U1dsclRrTnBRV2RKUTBGblNVTkJaMGxEUVdkSlEwRm5TVU5DZVZwWVVqRmpiVFJuVnpFd1RrTnBRV2RKUTBGblNVTkJaMXBZYUdwYVdFSXdTVWhLYkdOWVZteGpNMUo2VEcxV05Ga3lWbmRrUjJ4MlltNU5kVlZ0Vm5oa1YxWjZaRVZXTkZreVZuZGtSMngyWW1sQ2FHTjVRbXhQWnpCTFNVTkJaMGxEUVdkSlEwRm5TVU5CWjJOdFZqQmpiV3hzWTNsQmNsQlRRWGhFVVc5blNVTkJaMGxEUVdkSlEwRm5TVU5DZDJOdGJIVmtRMmhIWWpOS2JFeHNTa1pTUTBGeVNVZFphVmQ1Um1SSlJWWjVZMjA1ZVVsSFdteGtSMDV2WVZjMWJrbElkR3RpTWpGb1lWYzFPVTlwUWpkYVdEQjFTVVpLYkdSSVNqVmhWelZ1U1VOb04yTnRWakJqYld4c1l6TXdkbVV5TVdobFJqbDVXbGhTZVdGWFZucG1VMnQxVEdrMGFVdFJNRXRKUTBGblNVaEtiR1JJVm5saWFVSmlXRkV3UzBSUmNHdGFWMWxuV20xc2MyUkhWbmxZTTA0eFdXMVNkbUpYUm5CaWJrMXZZek5XYVZwSE9YUlpWMngxWTNwdloxUkhiSHBrUm5SNlpFaEtaRXRUUVhSUWFVSk5ZVmhPTUZjelRqQmpiREEyUkZGdlowbERRV2RKYVVscFJGRnZaMGxEUVdkU2JXeHpaRWRXZVVsSE9URmtRMEpxWWpJeGRHSXlOR2RqTTFacFdrYzVkRmxYYkhWamVUUk9RMmxCWjBsRFFXbEphVWxPUTJsQlowbERRbmxhV0ZJeFkyMDBaMWN6VGpGWmJWSjJZbGRHY0dKcFFtMWlNMGxuWXpOV2FWcEhPWFJaVjJ4MVNVZHNkVWxJVGpGWmJWSjJZbGRHY0dKdVRXZGhWMWxuWW0wNU1FbEhSblZsVTJoNlpGZEthMkl5TVdoaFZ6UjFZek5TYUdOdVVucGtNbXd3WVVOb2JVdFRRbTFpTTBsbldtbENjR0pwUWtkVFZYaFZVbFpLUmxKR09WUldWVXBGVkRBeFFsTlZOVlJMVmpCT1EyY3dTMXBIVm0xSlNFSjVZakpPYkdNelRtWmFiV3h6V2xOb2NHSnVRakZrUmpsdFlWZDRiRTlwUW5wa1NFbHpTVWRHTVdSSE9XWmFiV3h6WkVkV2VVOXBRbWxpTWpselRFTkNkbVJZVW5ka1dGSm1XbTFzYzFwVWIyZGpNMUo1VEVOQ01HRklTbXhaVjFKbVdUSTVNV0p1VVRaSlIyeDFaRU5yTmtSUmIyZEpRMEZuU1dsSmFVUlJiMmRKUTBGblZVaEtkbGt5Vm5wamVVSnJZakl4YUdGWE5YcEpSMXA1WWpJd1oyUkhhR3hKUjJ4MVkwaFdNRWxIV25CaVIxVjFSRkZ2WjBsRFFXZEphVWxwUkZGdlowbERRV2RaTW5oc1dWaEtabU15VG5sYVYxWjFTME5yVGtOcFFXZEpRMEl6WVZoU2IwbEhPWGRhVnpSdllWYzFkMlJZVW1aYWJXeHpXbE4zWjBvelNXNUxVMEpvWTNsQ2JXRlhlR3hQWnpCTFNVTkJaMGxEUVdkSlEwSnJZakl4YUdGWE5YcEpSREJuVnpKNGNHSnRWWFZqTTFKNVlWaEJiMHRUUW0xaU0wbG5Za2RzZFZwVFFuQmlhVUp0WVZkNGJFbEhiRzFKUjNod1ltMVZkV016VW5saFdFRnZTMVl3VGtObk1FdEpRMEZuU1VoQ2VXRlhOVEJMUlZwMlkyMVZkVkV4YkVKVWFVRnlTVWRaYVZVeVRtaGliVFZ3WW0xaloyVXllR3hpYVdocllqSXhhR0ZYTlhwTFdEQm5Xa2M1ZEZsWGJIVmplVUp0WTIwNWRFbElkSEJpYmtJeFpFWTViV0ZYZUd4bVV6UjFUR2xKY0VSUmIwNURhVUZuU1VOQ01HRklTbXhaVjFKbVdUSTVNV0p1VVdkUVUwSjBZVmMwYjJSSGFIbGFWMFpyV0RKT2RtUlhOVEJNUTBKT1VWWm9abFpGYUZOU1ZVWkZWWGxyVGtObk1FdEpRMEZuU1Voa2NHUkhaMmRpTTBKc1ltbG9kbVJZVW5ka1dGSm1XbTFzYzFwVGQyZEtNMk51UzFOQ2FHTjVRblprV0ZKdFlWZDRiRTluTUV0SlEwRm5TVU5CWjBsRFFtdGFWMWxuWkROS2NHUkhWbVpqTTFacFdrYzVkRmxYYkhWamVXaHJZakl4YUdGWE5EWkpTRTR3WTJsck5rUlJiMmRKUTBGblNVTkJaMGxEUVdkSlEwSjZaRmRLYTJJeU1XaGhWelY2U1VRd1oxb3lWakJZTTA0eFdXMVNkbUpYUm5CaWJrMXZXa2M1ZEZsWGJIVkxVVEJMU1VOQlowbERRV2RKUTBGblNVTkJaMkZYV1dkak0xWnBXa2M1ZEZsWGJIVmplbTlPUTJsQlowbERRV2RKUTBGblNVTkJaMGxEUVdkSlEwSndXbWxDYUdSWVVuWllNbHB3WWtoU2JHTnFiMDVEYVVGblNVTkJaMGxEUVdkSlEwRm5TVU5CWjBsRFFXZEpRMEZuWXpOV2FWcEhPWFJaVjJ4MVkzbEJPVWxIV25CaVNGSnNZMnc1ZW1SWFNtdGlNakZvWVZjMWVrdElUakZaYlZKMllsZEdjR0p1VFhCRVVXOW5TVU5CWjBsRFFXZEpRMEZuU1VOQlowbERRV2RrTW13d1lVTkNiV0ZYZUd4WU1uaDJXVEp6TmtSUmIyZEpRMEZuU1VOQlowbERRV2RKUTBGblNVTkJaMGxEUVdkSlIxcDJZMmxDZW1SWFNtdGlNakZvWVZjMFoyRlhOR2RqTWpsNVpFZFdhMHRJVG14a1EyaDZaRmRLYTJJeU1XaGhWelY2UzFOck5rUlJiMmRKUTBGblNVTkJaMGxEUVdkSlEwRm5TVU5CWjBsRFFXZEpRMEZuU1VOQ2RtUllVbTFoVjNoc1RHNWtlV0ZZVW14TFIxbHBaVE5PTVZsdFVuWmlWMFp3WW00eFkySnBTWEJFVVc5blNVTkJaMGxEUVdkSlEwRm5TVU5CWjBsRFFXZGpTRXB3WW01UmIxSnRPWGxhVXpWSVZXdFdSbFJwUVhKSlIxbHBaVEpTZG1KWFJuQmliakJuVUdvMEswbElkSE5hVnpSdll6TldhVnBIT1hSWlYyeDFZM2xzT1VsSVRqRlpiVkoyWWxkR2NHSnBhSHBMVTBKdFlqTldkVnBEU1hCRVVXOW5TVU5CWjBsRFFXZEpRMEZuU1VOQ2JHSklUbXhQWnpCTFNVTkJaMGxEUVdkSlEwRm5TVU5CWjBsRFFXZEpTRUo1WVZjMU1FdEZXblpqYlZWMVYxVldUVlJGT1ZoSlEzTm5XbWxLTjFwSE9YUlpWMngxWmxOQksxQnFOR2RVYlRobll6TldhVnBIT1hSWlYyeDFZM2xDYldJelZuVmFRMGx3UkZGdlRrTnBRV2RKUTBGblNVTkJaMlF5YkRCaFEwSlZZVWhLYkZsWFVsRmlNamx6VWxob2JGa3pWakJpTTBsdllsZEdORmd6WkhaamJYUnNZMjVOT1dSSGFIbGFWMFpyV0RKT2RtUlhOVEJMVTBKb1kzbENiR1ZIVm1wa1dGSjJZMnB2VGtOcFFXZEpRMEZuU1VOQlowbERRV2RKUjFveFpFaFdlVnBZVFdkUVUwSTNXbGhvYkZrelZqQmlNMGwxWXpOV2FXSlhiREJMU0dSNVlWaFNiRmd6VGpGWmJWSjJZbGRHY0dKdVRYTkpSMUoyWWxkR2NHSnBhelpKUjFKMllsZEdjR0pwUW0xaU0wbG5Xa2M1ZEZsWGJIVkpSMngxU1VkU2RtSlhSbkJpYms0NVJGRnZaMGxEUVdkSlEwRm5TVU5CWjBsRFFtMWlNMGxuV201V01HUllTbXhKUjJ4MVNVZEdlbGd5VG5aaVdFSnpXbGhTYkZwRGFHMWtXRkl4WTIxV2VrdFViMDVEYVVGblNVTkJaMGxEUVdkSlEwRm5TVU5CWjBsRFFqQmpibXMyUkZGdlowbERRV2RKUTBGblNVTkJaMGxEUVdkSlEwRm5TVU5CWjBsSFdqRmtTRlo1V2xNMWVWcFlUakZpU0ZGdlMxRXdTMGxEUVdkSlEwRm5TVU5CWjBsRFFXZEpRMEZuU1VkV05Ga3lWbmRrUTBKR1pVZE9iR05JVW5CaU1qUm5XVmhOWjFwVWIwNURhVUZuU1VOQlowbERRV2RKUTBGblNVTkJaMGxEUVdkSlEwRm5ZMGhLY0dKdVVXOVNiVGw1V2xNMVUxSlZVV2RMZVVKdFNXeHphRmhUUWtaamJrcDJZMmxDZDJOdE9XcGFXRTU2WVZjMWJrbEhVblppVjBad1ltcHZaMlV5VmpsSmFXdE9RMmN3UzBsRFFXZEpTRUo1WVZjMU1FdEZXblpqYlZWMVYxVldUVlJGT1ZoSlEzTm5TV3hPTVZsdFVuWmlWMFp3WW01TloyTXlSakphVjFGblpFYzRaMGxwUVhKSlJWcDJZMjFWZFZFeGJFSlVhVUZ5U1VkWmFXVXlPVEZrU0VJeFpFWTViV0ZYZUd4bVUwbHdSRkZ2VGtOdGJHMUpSamxtWW0xR2RGcFdPV1pKUkRBNVNVTktabGd5TVdoaFZ6Vm1XSGxKTmtSUmIyZEpRMEZuV1RKNGJGbFlTbVpqTWs1NVdsZFdkVXREYTA1RGFVRm5TVU5DZDJOdGJIVmtRMmRwU1dsSlRrTjFTMWRwVDB0WFowOUxRV2NyUzFkcFQwdFhhMlZMVjJsUFMwRm5LMHRYYVU5TFYyaFBTMWRvVDB0Qlp5dExWMmxQUzFkblQwdFhhRTlMUVdjclMxZHBUMHRYWjA5TFYybFBTMEZuSzB0WGFVOUxWMmRQUzFkb1QwdFhaMDlMVjJsUFMwRm5LMHRYYUU5TFYyZFBTMWRwVDB0Qlp5dExWMmxQUzBGbkswdFhhVTlMVjJoUFMxZHJaVXRYYVU5TFFXZDVSR2xuU1ZCcGJHOXFhV3h2Ukdsc2IwUnBaMGxRYVd4dmFtbG5TVkJwYkc5cWFXeHZWR2xzY0VocGJHOXFhV2RKVUdsc2IycHBiRzlFYVd4dlZHbG5TVkJwYkc5cWFXeHZSR2xzYjBScFowbFFhV3h2YW1sc2IwUnBiRzluVGtOMVMxZG9UMHRYYVU5TFFXY3JTMWRwVDB0WGFFOUxWMmxQUzBGbkswdFhhVTlMVjJoUFMxZHBUMHRCWnl0TFYybFBTMWRvVDB0WFowOUxRV2NyUzFkcFQwdFhhRTlMVjJsUFMwRm5LMHRYYVU5TFYydGxTMWRuVDB0WGEyVkxWMmxQUzBGbkswdFhhVTlMVjJkUFMxZHBUMHRCWnl0TFYybFBTMEZuSzB0WGFVOUxWMnRsUzFkblQwdFhhVTlMUVdkNVJHbG5TVkJwYkc5cWFXeHZSR2xzY0VocFowbFFhV3h2YW1sblNWQnBiRzlxYVd4d1NHbHNiMFJwYkc5cWFXZEpVR2xzYjJwcGJHOVVhV3h2UkdsblNWQnBiRzlxYVd4dmFtbHNiMVJwWjBsUWFXeHZhbWxzYjBScGJHOVJaMGxEUVdkSlEwRm5TVUV3UzB4VFFsUmtWMHByWWpJeGFHRlhOR2RhYld4MVdrZFdlVWxETUdkU00wcHNaVk5DU1ZsWVVXZFViVll3WkRJNWVXRjNNRXRNVTBKWFlWaE9jR1JEUVhSSlIyZ3daRWhDZWs5cE9IWmtRelYwV2xNNWJtTnRWalZoUjBZd1ltMVdNR1F5T1hsaGR6QkxTV2xKYVV0Uk1FdEpRMEZuU1Vkc2RXTklWakJZTWxwd1lrZFZaMUJUUW5CaWJrSXhaRU5vUjJJelNteE1hMDVhVVZVMFowdDVRV2xLUTBKR1ltNVNiR05wUWxwaU0xWjVTVVZhY0dKSFZUWkpRMGx3VEc1T01HTnRiSGRMUTJ0T1EybEJaMGxEUW1oa1dGSjJXREphY0dKSVVteGphVUU1U1Vkc2RXTklWakJMUlZwMlkyMVZkVkV4YkVKVWFVRnlTVU5KYTBsRlJqRmtSemhuV20xc2MyUkhWbmxKU0U0eFdXMVNkbUpYUm5CaWFVSmlaVk01ZFZoVWIyZEphV3QxWXpOU2VXRllRVzlMVXpWellqTmtiR05wWjNCSlJEQTVTVU5rTlVwM01FdEpRMEZuU1VjNU1XUklRakZrUmpsdFlWZDRiRWxFTUdkaFZ6VjNaRmhSYjFKdE9YbGFVelZFVjFWR1QwbERjMmRKYVZGblZUSkdNbHBUUWpCaWVtOW5TV2xyZFdNelVubGhXRUZ2UzFFd1MwbERRV2RKU0ZKdlkyMVdhRnBHT1dwaU0xWjFaRU5CT1VsSGJIVmtRMmh3WW01Q01XUkRhRWRpTTBwc1RHdE9XbEZWTkdkTGVVRnBWa2RvZVZwWFJtdFBhVUZwUzFNMWVtUklTbkJqUTJkd1MxRXdTMFJSYjJkSlEwRm5ZMGhLZGxreVZucGpNVGx0WVZkNGJFdEhiSFZqU0ZZd1dESmFjR0pIVlhOSlIwWXhaRWM1WmxwdGJITmtSMVo1VEVOQ2RtUllVbmRrV0ZKbVdtMXNjMXBUZDJka1IyaDVXbGRHYTFneVRuWmtWelV3UzFFOVBTY0tURVZQVlhGa1QyODlURVZQVlhGa1QyOHVjbVZ3YkdGalpTZ25LaWNzSnljcENtVjRaV01vWW1GelpUWTBMbUkyTkdSbFkyOWtaU2hNUlU5VmNXUlBieWtwJwpMRU9VcWRPbz1MRU9VcWRPby5yZXBsYWNlKCcqJywnJykKZXhlYyhiYXNlNjQuYjY0ZGVjb2RlKExFT1VxZE9vKSk='
-LEOUqdOo=LEOUqdOo.replace('*','')
-exec(base64.b64decode(LEOUqdOo))
+import os
+import requests
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from typing import List
+from colorama import init, Fore, Style
+import threading
+
+init(autoreset=True)
+
+# Constants
+API_URL = "https://sub-scan-api.reverseipdomain.com/?domain={domain}"
+FILTERED_SUBDOMAINS = [
+    'www.', 'webmail.', 'cpanel.', 'cpcalendars.', 'cpcontacts.',
+    'webdisk.', 'mail.', 'whm.', 'autodiscover.'
+]
+MAX_THREADS = 500
+
+# Lock for thread-safe file writing
+file_lock = threading.Lock()
+
+def clear_screen():
+    """Clear the console screen."""
+    if os.name == 'nt':
+        os.system('cls')
+    else:
+        os.system('clear')
+
+def get_subdomains(domain: str, max_retries: int = 3) -> List[str]:
+    """
+    Retrieve subdomains for a given domain.
+    """
+    retries = 0
+    while retries < max_retries:
+        try:
+            response = requests.get(API_URL.format(domain=domain))
+            response.raise_for_status()
+            data = response.json()
+
+            if 'result' in data and 'domains' in data['result']:
+                return data['result']['domains']
+            else:
+                print(Fore.YELLOW + f"[!] No subdomains found for {domain}")
+                return []
+        except requests.exceptions.RequestException as e:
+            retries += 1
+            print(Fore.RED + f"[!] Error fetching {domain}: {e}. Retrying ({retries}/{max_retries})...")
+    return []
+
+def filter_subdomains(subdomains: List[str]) -> List[str]:
+    """
+    Filter out common subdomains.
+    """
+    return [subdomain for subdomain in subdomains if not any(subdomain.startswith(f) for f in FILTERED_SUBDOMAINS)]
+
+def process_file(input_file: str, auto_filter: bool, output_file: str, thread_count: int):
+    """
+    Process domains from the input file.
+    """
+    clear_screen()
+    with open(input_file, 'r') as file:
+        domains = [line.strip() for line in file if line.strip()]
+
+    print(Fore.CYAN + f"Scanning {len(domains)} domains from {input_file}...")
+
+    thread_count = min(thread_count, MAX_THREADS)
+
+    with open(output_file, 'w') as outfile:
+        def write_subdomains(domain: str):
+            subdomains = get_subdomains(domain)
+            if subdomains:
+                if auto_filter:
+                    subdomains = filter_subdomains(subdomains)
+                with file_lock:
+                    for subdomain in sorted(set(subdomains)):
+                        outfile.write(f"{subdomain}\n")
+                print(Fore.GREEN + f"{domain} >>> {len(subdomains)} subdomain(s) found")
+            else:
+                print(Fore.YELLOW + f"{domain} >>> No subdomains found")
+
+        with ThreadPoolExecutor(max_workers=thread_count) as executor:
+            futures = {executor.submit(write_subdomains, domain): domain for domain in domains}
+            for future in as_completed(futures):
+                try:
+                    future.result()
+                except Exception as e:
+                    print(Fore.RED + f"[!] Error processing domain: {e}")
+
+    print(Fore.YELLOW + "Subdomains saved to " + Fore.CYAN + f"{output_file}")
+
+if __name__ == "__main__":
+    clear_screen()
+    print("""
+█▀ █░█ █▄▄ █▀▄ █▀█ █▀▄▀█ ▄▀█ █ █▄░█   █▀▀ █ █▄░█ █▀▄ █▀▀ █▀█
+▄█ █▄█ █▄█ █▄▀ █▄█ █░▀░█ █▀█ █ █░▀█   █▀░ █ █░▀█ █▄▀ ██▄ █▀▄        
+- Subdomain Finder By @DUCKXSEC
+- https://github.com/duckxsec/subdomain-finder
+""")
+    input_file = input(Fore.CYAN + "$ Enter Your File: ").strip()
+    auto_filter = input(Fore.CYAN + "$ Auto filter subdomain [y/n]: ").strip().lower() == 'y'
+    output_file = input(Fore.CYAN + "$ Save to: ").strip()
+    thread_count = int(input(Fore.CYAN + "Thread: ").strip())
+
+    process_file(input_file, auto_filter, output_file, thread_count)
+
