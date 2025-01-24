@@ -92,8 +92,8 @@ if __name__ == "__main__":
     print("""
 █▀ █░█ █▄▄ █▀▄ █▀█ █▀▄▀█ ▄▀█ █ █▄░█   █▀▀ █ █▄░█ █▀▄ █▀▀ █▀█
 ▄█ █▄█ █▄█ █▄▀ █▄█ █░▀░█ █▀█ █ █░▀█   █▀░ █ █░▀█ █▄▀ ██▄ █▀▄        
-- Subdomain Finder By @DUCKXSEC
-- https://github.com/duckxsec/subdomain-finder
+- Subdomain Finder By @LOOT_XSEC
+- https://github.com/LOOTXSEC/subdomain-finder
 """)
     input_file = input(Fore.CYAN + "$ Enter Your File: ").strip()
     auto_filter = input(Fore.CYAN + "$ Auto filter subdomain [y/n]: ").strip().lower() == 'y'
