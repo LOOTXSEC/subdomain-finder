@@ -1,6 +1,6 @@
 # Subdomain Finder
 
-![Subdomain Finder](https://i.imgur.com/PIVpHlI.png)
+![Subdomain Finder](https://i.imgur.com/rK83JE6.jpeg)
 
 Discover a large number of subdomains at lightning speed with this subdomain finder! Designed to scan multiple domains simultaneously, this tool is easy to use and highly efficient for security testing, network mapping, and pentesting.
 
